@@ -1,10 +1,13 @@
 body {
-    background-image: url(../images/BACKGROUND.png); /* путь к твоему изображению */
-    background-size: cover; /* изображение покрывает весь фон */
-    background-position: center; /* центрируем изображение */
-    background-repeat: no-repeat; /* изображение не повторяется */
-    margin: 0; /* убираем отступы по умолчанию */
-    height: 100vh; /* высота body равна высоте окна браузера */
+    background-image: url(../images/BACKGROUND.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar-brand img{
@@ -19,17 +22,25 @@ body {
 }
 
 .autorization-block {
-    border: 2px solid #14ceeb; /* Border for the container */
-    padding: 5px; /* Padding inside the container */
-    border-radius: 15px; /* Rounded corners for the container */
+    border: 2px solid #14ceeb;
+    padding: 5px;
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
+    box-shadow:
+        0 0 1px #14ceeb,
+        0 0 1px #14ceeb,
+        0 0 1px #14ceeb,
+        0 0 2px #14ceeb,
+        0 0 3px #14ceeb,
+        0 0 4px #14ceeb;
 }
 
 .register-btn{
     width: 80px;
     height: 40px;
     background-color: #14ceeb;
+    color: #fff;
 }
 
 .login-btn{
@@ -57,5 +68,37 @@ body {
 
 .introduction-text p{
     color:white;
-    width: 83%;
+    width: 205%;
+}
+
+.neon-text{
+    color: #fff;
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 5px #fff, 
+        0 0 5px #ff00ff, 
+        0 0 10px #ff00ff, 
+        0 0 20px #ff00ff, 
+        0 0 30px #610d61, 
+        0 0 40px #723972;
+}
+
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+    top: 140%;
+    transform: translateY(0%);
+    width: 100px;
+}
+
+.customer-info{
+    
+}
+
+.customer-info img{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid #14ceeb; */
+    margin-top: 70px;
+    margin-left: 45px;
 }
