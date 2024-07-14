@@ -1,0 +1,61 @@
+body {
+    background-image: url(../images/BACKGROUND.png); /* путь к твоему изображению */
+    background-size: cover; /* изображение покрывает весь фон */
+    background-position: center; /* центрируем изображение */
+    background-repeat: no-repeat; /* изображение не повторяется */
+    margin: 0; /* убираем отступы по умолчанию */
+    height: 100vh; /* высота body равна высоте окна браузера */
+}
+
+.navbar-brand img{
+    width: 150px;
+    height: 50px;
+}
+
+.custom-navbar {
+    height: 75px;
+    padding: 10px 20px; 
+    background-color: #8908c171 !important; 
+}
+
+.autorization-block {
+    border: 2px solid #14ceeb; /* Border for the container */
+    padding: 5px; /* Padding inside the container */
+    border-radius: 15px; /* Rounded corners for the container */
+    justify-content: center;
+    align-items: center;
+}
+
+.register-btn{
+    width: 80px;
+    height: 40px;
+    background-color: #14ceeb;
+}
+
+.login-btn{
+    width: 80px;
+    height: 40px;
+    color: #14ceeb !important;
+    margin-right: 5px;
+}
+
+.introduction-text{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.introduction-text h1{
+    color: rgb(243, 95, 240);
+}
+
+.define img{
+    width: 125px;
+    height: 35px
+}
+
+.introduction-text p{
+    color:white;
+    width: 83%;
+}
