@@ -1,16 +1,13 @@
-body {
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../images/BACKGROUND.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+*{
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Gowun Batang", serif;
     font-weight: 400;
     font-style: normal;
-    color: #fff; /* Цвет текста */
 }
 
 .navbar-brand img{
@@ -98,15 +95,8 @@ body {
     width: 100px;
 }
 
-.introduction-text span{
-    width: auto;
-    color: #fff;
-    text-shadow: 
-    0 0 5px #ffffff, 
-    0 0 5px #fff, 
-    0 0 5px #ffffff, 
-    0 0 10px #ffffff, 
-    0 0 20px #ffffff, 
-    0 0 30px #ffffff, 
-    0 0 40px #ffffff;
+.arrow{
+    content: "→ ";
+    font-size: 24px;
+    color: #fff; 
 }
