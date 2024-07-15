@@ -1,5 +1,7 @@
 body {
-    background-image: url(../images/BACKGROUND.png);
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/BACKGROUND.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,6 +10,7 @@ body {
     font-family: "Gowun Batang", serif;
     font-weight: 400;
     font-style: normal;
+    color: #fff; /* Цвет текста */
 }
 
 .navbar-brand img{
@@ -50,6 +53,13 @@ body {
     margin-right: 5px;
 }
 
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .introduction-text{
     position: absolute;
     top: 50%;
@@ -59,12 +69,9 @@ body {
 
 .introduction-text h1{
     color: rgb(243, 95, 240);
+    font-size: 60px;
 }
 
-.define img{
-    width: 125px;
-    height: 35px
-}
 
 .introduction-text p{
     color:white;
@@ -86,19 +93,20 @@ body {
 .bottom-text {
     position: absolute;
     bottom: 0;
-    top: 140%;
+    top: 130%;
     transform: translateY(0%);
     width: 100px;
 }
 
-.customer-info{
-    
-}
-
-.customer-info img{
-    width: 200px;
-    height: 200px;
-    /* border: 2px solid #14ceeb; */
-    margin-top: 70px;
-    margin-left: 45px;
+.introduction-text span{
+    width: auto;
+    color: #fff;
+    text-shadow: 
+    0 0 5px #ffffff, 
+    0 0 5px #fff, 
+    0 0 5px #ffffff, 
+    0 0 10px #ffffff, 
+    0 0 20px #ffffff, 
+    0 0 30px #ffffff, 
+    0 0 40px #ffffff;
 }
