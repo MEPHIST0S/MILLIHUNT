@@ -1,3 +1,4 @@
+/* CSS RESET */
 *{
     margin: 0;
     padding: 0;
@@ -20,10 +21,23 @@ body {
     z-index: -1;
 }
 
+/* MAIN CONTAINER THAT DIVIDED AS ROW IN 6 TO 6 */
 .main-container-inner{
     position: relative;
 }
 
+/* WRAPPER OR (COVER, OVERLAY) */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Change this to adjust the overlay color and opacity */
+    z-index: 0;
+}
+
+/* NAVIGATION BAR - (NAVBAR) */
 .navbar-brand img{
     width: 150px;
     height: 50px;
@@ -73,9 +87,10 @@ body {
     padding: 20px;
 }
 
+/* FIRST HALF - INTRODUCTION TEXT */
 .introduction-text{
     position: absolute;
-    top: 240%;
+    top: 60%; /*CHANGED*/
     left: 5%;
     transform: translateY(-50%);
 }
@@ -92,7 +107,7 @@ body {
 
 .introduction-text p{
     color:white;
-    width: 120%;
+    width: 130%;
 }
 
 .neon-text{
@@ -110,36 +125,89 @@ body {
 .bottom-text {
     position: absolute;
     bottom: 0;
-    top: 120%;
+    top: 110%;
     transform: translateY(0%);
     width: 100px;
 }
 
+/* ARROW */
 .arrow-container {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center; /* Центрирование содержимого */
+    justify-content: center; /* CENTRALIZATION */
     gap: 25px;
 }
 
 .arrow {
     flex-grow: 1;
-    height: 2px; /* Высота линии */
-    background-color: #fff; /* Цвет линии */
+    height: 2px; /* HEIGHT OF LINE */
+    background-color: #fff; /* COLOR OF LINE */
     position: relative;
-    margin: 0 10px; /* Пространство между текстом и стрелкой */
-    min-width: 150px; /* Минимальная ширина линии */
+    margin: 0 10px; /* SPACE BETWEEN TEXT AND ARROW */
+    min-width: 150px; /* MIN WIDTH OF LINE */
 }
 
 .arrow::after {
     content: '';
     position: absolute;
-    right: -5px; /* Позиционирование треугольника */
-    top: calc(50% - 5px); /* Позиционирование треугольника по вертикали */
+    right: -5px; /* POSITION OF TRIANGLE */
+    top: calc(50% - 5px); /* VERTICAL POSITION OF TRIANGLE */
     width: 0;
     height: 0;
     border-left: 10px solid #fff;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
+}
+
+/* SECOND HALF - CUSTOMER INFO */
+.customer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* SPACE BETWEEN BLOCKS */
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.info-number {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #14ceeb;
+}
+
+.first {
+    margin-top: 10%;
+}
+
+/* PLUS */
+.plus {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 30px;
+    animation: rotate 2s linear infinite;
+    color: red;
+}
+
+.info-title {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+    text-align: right;
+}
+
+/* ROTATE ANIMATION FOR PLUS */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
